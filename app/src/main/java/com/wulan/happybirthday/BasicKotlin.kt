@@ -71,10 +71,9 @@ class FoldablePhone(var isFolded: Boolean = true): Phone() {
 }
 
 class Bid(val amount: Int, val bidder: String)
-
-fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
-    return bid?.amount ?: minimumPrice
-}
+    fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
+        return bid?.amount ?: minimumPrice
+    }
 
 fun main() {
     // Bagian untuk notifikasi seluler
@@ -130,7 +129,7 @@ fun main() {
     newFoldablePhone.checkPhoneScreenLight()
 
     println()
-    
+
     //Bagian untuk lelang khusus
     val winningBid = Bid(5000, "Private Collector")
 
